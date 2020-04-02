@@ -1,22 +1,34 @@
 cd ~/Downloads
 
-sudo apt update
-sudo apt upgrade
+sudo apt-get update
+sudo apt-get upgrade
+
+# snap
+sudo apt-get install snapd
 
 # git
-apt-get install git
-git --version
+sudo apt-get install git
 
 # vscode
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install code # or code-insiders
-code --version
+sudo snap install code --classic
 
 # node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt-get install nodejs
+
 node --version
+
+# slack
+sudo snap install slack --classic
+
+# spotify
+sudo snap install spotify
+
+
+# displaylink
+# https://www.displaylink.com/downloads/file?id=1369
+## download file and extract
+## install dependancy
+# sudo apt-get install dkms
+## use install script
+

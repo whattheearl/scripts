@@ -1,20 +1,20 @@
 cd ~/Downloads
 
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade
 
 # snap
-sudo apt-get install snapd
+sudo apt install snapd
 
 # git
-sudo apt-get install git
+sudo apt install git
 
 # vscode
 sudo snap install code --classic
 
 # node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install nodejs
+sudo apt install nodejs
 
 node --version
 
@@ -24,11 +24,14 @@ sudo snap install slack --classic
 # spotify
 sudo snap install spotify
 
+# chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 
 # displaylink
 # https://www.displaylink.com/downloads/file?id=1369
 ## download file and extract
 ## install dependancy
-# sudo apt-get install dkms
+# sudo apt install dkms
 ## use install script
 

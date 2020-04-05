@@ -1,0 +1,1 @@
+apt-get install $(grep -vE "^\s*#" pkglist  | tr "\n" " ")

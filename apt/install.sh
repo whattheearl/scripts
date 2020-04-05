@@ -1,1 +1,1 @@
-apt-get install $(grep -vE "^\s*#" pkglist  | tr "\n" " ")
+apt-get --assume-yes install $(grep -vE "^\s*#" pkglist  | tr "\n" " ")

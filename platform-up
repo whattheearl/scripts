@@ -1,7 +1,9 @@
 #!/bin/bash
+tyler-down;
 echo Restarting the platform...;
 cwd=$(pwd);
-cd ~/src/spy/platform;
+cd ~/spy/platform-dev-environment-compose;
 docker-compose down;
 docker-compose up -d;
 cd $cwd; echo Up complete!;
+tyler-up;

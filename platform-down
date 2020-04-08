@@ -2,5 +2,5 @@
 echo Spinning down the platform...;
 cwd=$(pwd);
 cd ~/spy/platform-dev-environment-compose;
-docker-compose down;
+sudo docker-compose down;
 cd $cwd; echo Down complete!;

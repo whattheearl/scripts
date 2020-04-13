@@ -1,4 +1,6 @@
 #!/bin/bash
-# find network name using "nmcli con"
-# {network manager cli} {connection} {down} id {networkname}
-nmcli con down id TylerTech
+echo Spinning down the platform...;
+cwd=$(pwd);
+cd ~/spy/platform-dev-environment-compose;
+sudo docker-compose down;
+cd $cwd; echo Down complete!;
